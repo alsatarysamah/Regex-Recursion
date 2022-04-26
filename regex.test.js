@@ -8,13 +8,9 @@ characters (no numbers and symbols) and it should end with capital A else return
 function capitalA(s) {
     // Add your logic.
 
-    let regEx = /\s/;
-    let regEx2 = /A$/;
-    let regEx3 = /\d/;
-    if (regEx.test(s)) return false;
-    else if (regEx3.test(s)) { return false }
-    else if (regEx2.test(s))
-        return true; else return false;
+    let regEx=/[A-Za-z][^0-9]A$/;
+  return  regEx.test(s);
+
 
 
 
@@ -26,7 +22,7 @@ which end with io (example@example.io) */
 
 function ioEmail(email) {
     // Add your logic.
-    let regEx =/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.io/;
+    let regEx =/^([a-zA-Z0-9]+)@[a-zA-Z0-9-]+\.io$/;
 
     return regEx.test(email);
 }
