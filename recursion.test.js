@@ -1,22 +1,23 @@
 /* Write a function to do the division operation without using the built-in division*/
+let x = 0;
 
-var x = 0;
-function division(n1, n2) {
+function division(number, dividedBy) {
     // Write you logic here.
-
-
-
-    if (n1 < n2)
-        return x;
-    else {
-        x++;
-
-        return division(n1, n2);
-
-
-
+    if ( dividedBy == 0) return 0;
+   
+    if (number < dividedBy){
+        let y=x;
+        x=0;
+        return y;
 
     }
+      
+    else {
+        x++;
+        number = number - dividedBy;
+        return division(number, dividedBy);
+    }
+   // x=0;
 }
 
 
