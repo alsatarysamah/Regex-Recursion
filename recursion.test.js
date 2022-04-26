@@ -1,14 +1,19 @@
 /* Write a function to do the division operation without using the built-in division*/
+
 var x = 0;
 function division(n1, n2) {
     // Write you logic here.
+
+
 
     if (n1 < n2)
         return x;
     else {
         x++;
-        n1 = n1 - n2;
+
         return division(n1, n2);
+
+
 
 
     }

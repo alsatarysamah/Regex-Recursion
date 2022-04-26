@@ -7,16 +7,11 @@ characters (no numbers and symbols) and it should end with capital A else return
 
 function capitalA(s) {
     // Add your logic.
+
     let regEx=/[A-Za-z][^0-9]A$/;
   return  regEx.test(s);
 
-    // let regEx = /\s/;
-    // let regEx2 = /A$/;
-    // let regEx3 = /\d/;
-    // if (regEx.test(s)) return false;
-    // else if (regEx3.test(s)) { return false }
-    // else if (regEx2.test(s))
-    //     return true; else return false;
+
 
 
 }
