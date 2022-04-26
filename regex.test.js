@@ -7,6 +7,7 @@ characters (no numbers and symbols) and it should end with capital A else return
 
 function capitalA(s) {
     // Add your logic.
+
     let regEx = /\s/;
     let regEx2 = /A$/;
     let regEx3 = /\d/;
@@ -14,6 +15,7 @@ function capitalA(s) {
     else if (regEx3.test(s)) { return false }
     else if (regEx2.test(s))
         return true; else return false;
+
 
 
 }
