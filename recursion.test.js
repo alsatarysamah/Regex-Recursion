@@ -1,14 +1,20 @@
 /* Write a function to do the division operation without using the built-in division*/
-
-function division(number, dividedBy) {
+var x = 0;
+function division(n1, n2) {
     // Write you logic here.
-    if(number<dividedBy)
-    { return 0;}
-    else
-   {return division(number-dividedBy, dividedBy)+1;}
-    
-  
+
+    if (n1 < n2)
+        return x;
+    else {
+        x++;
+        n1 = n1 - n2;
+        return division(n1, n2);
+
+
+    }
 }
+
+
 
 /* Write a function that implement Math.pow(x,n) but using recursion
 Example:
